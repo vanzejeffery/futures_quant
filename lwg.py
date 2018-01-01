@@ -18,4 +18,3 @@ df_lwg['Volatility']=pd.rolling_std(df_lwg['Log_Ret'],window=252)*np.sqrt(252)
 ddaa=df_lwg.index.tolist()
 df_lwg['year']=[x[0:4] for x in df_lwg.index.tolist()]
 df_lwg['month']=[x[5:7] for x in df_lwg.index.tolist()]
-
